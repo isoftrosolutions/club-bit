@@ -75,7 +75,7 @@ include 'includes/layout.php';
 
 <div class="card" style="max-width: 900px; margin-top: 24px;">
     <h2 style="font-size: 18px; font-weight: 700; margin-bottom: 16px;">Preview</h2>
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 24px; background: #fafaf3; border-radius: 12px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; padding: 24px; background: #fafaf3; border-radius: 12px;">
         <div style="text-align: center; padding: 16px; background: var(--primary); color: var(--on-primary); border-radius: 8px;">
             <div style="font-size: 12px; font-weight: 600; text-transform: uppercase;">Primary</div>
         </div>

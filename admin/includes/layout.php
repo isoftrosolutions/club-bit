@@ -197,7 +197,7 @@ $adminPages = [
             margin-bottom: 48px;
         }
         .page-title {
-            font-size: 32px;
+            font-size: clamp(22px, 4vw, 32px);
             font-weight: 700;
             letter-spacing: -0.01em;
             color: #1a1c19;
@@ -380,8 +380,9 @@ $adminPages = [
         }
         .mobile-menu-btn {
             display: none;
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
             background: #a10014;
             color: white;
             border: none;
@@ -402,10 +403,20 @@ $adminPages = [
             }
             .main-content {
                 margin-left: 0;
-                padding: 24px 16px;
+                padding: 16px 12px;
             }
             .mobile-menu-btn {
                 display: flex;
+            }
+            .top-bar {
+                margin-bottom: 24px;
+            }
+            .card {
+                padding: 16px;
+            }
+            .stats-grid {
+                gap: 16px;
+                margin-bottom: 24px;
             }
         }
         @media (min-width: 769px) and (max-width: 1024px) {

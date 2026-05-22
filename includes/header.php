@@ -202,41 +202,53 @@ $base_url = isset($base_url) ? $base_url : '/club/';
                 Join
             </a>
 
-            <button class="md:hidden flex items-center justify-center w-11 h-11 text-primary" onclick="document.querySelector('.mobile-nav').classList.toggle('hidden')" aria-label="Toggle menu">
-                <span class="material-symbols-outlined text-2xl">menu</span>
+            <button class="md:hidden flex items-center justify-center w-11 h-11 text-primary mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Toggle menu">
+                <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
             </button>
         </div>
     </nav>
 </header>
 
 <!-- Mobile Navigation -->
-<div class="mobile-nav hidden fixed inset-0 z-40 bg-background md:hidden">
+<div class="mobile-nav hidden fixed inset-0 z-40 bg-surface md:hidden" id="mobile-nav">
     <div class="flex flex-col h-full pt-16 px-margin-mobile pb-8">
         <div class="flex-1 flex flex-col gap-1 py-lg">
-            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'index.php' || $currentPage == '') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>index.php">
+            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'index.php' || $currentPage == '') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>index.php" onclick="closeMobileNav()">
                 <span class="material-symbols-outlined">home</span> Home
             </a>
-            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'about.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/about.php">
+            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'about.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/about.php" onclick="closeMobileNav()">
                 <span class="material-symbols-outlined">info</span> About
             </a>
-            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'team.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/team.php">
+            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'team.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/team.php" onclick="closeMobileNav()">
                 <span class="material-symbols-outlined">groups</span> Team
             </a>
-            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'programmes.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/programmes.php">
+            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'programmes.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/programmes.php" onclick="closeMobileNav()">
                 <span class="material-symbols-outlined">event</span> Events
             </a>
-            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'projects.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/projects.php">
+            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'projects.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/projects.php" onclick="closeMobileNav()">
                 <span class="material-symbols-outlined">science</span> Projects
             </a>
-            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'gallery.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/gallery.php">
+            <a class="flex items-center gap-3 font-headline-md text-headline-md <?php echo ($currentPage == 'gallery.php') ? 'text-primary' : 'text-secondary'; ?> py-md border-b border-outline-variant/10" href="<?php echo $base_url; ?>pages/gallery.php" onclick="closeMobileNav()">
                 <span class="material-symbols-outlined">photo_library</span> Gallery
             </a>
         </div>
         <div class="flex gap-sm pt-lg border-t border-outline-variant/20">
             <a href="<?php echo $base_url; ?>pages/membership.php" class="flex-1 bg-primary text-on-primary text-center px-md py-sm rounded-lg font-label-md text-label-md">Join</a>
-
         </div>
     </div>
 </div>
+
+<script>
+function toggleMobileNav() {
+    var nav = document.getElementById('mobile-nav');
+    var icon = document.getElementById('menu-icon');
+    nav.classList.toggle('hidden');
+    icon.textContent = nav.classList.contains('hidden') ? 'menu' : 'close';
+}
+function closeMobileNav() {
+    document.getElementById('mobile-nav').classList.add('hidden');
+    document.getElementById('menu-icon').textContent = 'menu';
+}
+</script>
 
 <main>
