@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Club Abhiyanta-BIT | Engineering Innovation Lab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#666666",
+                        "outline-variant": "#e5bdba",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "surface-dim": "#dadad4",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e3e3dd",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "background": "#fafaf3",
+                        "surface-variant": "#e3e3dd",
+                        "tertiary": "#4e4e4e",
+                        "primary": "#a10014",
+                        "on-primary-container": "#ffddda",
+                        "primary-fixed": "#ffdad6",
+                        "surface-bright": "#fafaf3",
+                        "on-primary-fixed-variant": "#930011",
+                        "on-primary-fixed": "#410003",
+                        "inverse-surface": "#2f312d",
+                        "secondary-container": "#e2dfde",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "inverse-on-surface": "#f1f1eb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-fixed": "#e4e2e2",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "secondary": "#5f5e5e",
+                        "on-secondary-container": "#636262",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeeee8",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-surface-variant": "#5c403d",
+                        "on-surface": "#1a1c19",
+                        "outline": "#906f6c",
+                        "surface": "#fafaf3",
+                        "surface-container-low": "#f4f4ee",
+                        "on-background": "#1a1c19",
+                        "surface-container-high": "#e8e8e2",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "inverse-primary": "#ffb3ad",
+                        "surface-tint": "#bc111e",
+                        "on-tertiary-container": "#e6e4e4",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-container": "#c81d25"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "sm": "16px",
+                        "gutter": "24px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "xs": "8px"
+                    },
+                    "fontFamily": {
+                        "display": ["Montserrat"],
+                        "label-md": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "code": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "code": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fafaf3;
+            color: #1a1c19;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .structural-line {
+            background: repeating-linear-gradient(90deg, #e5bdba33 0px, #e5bdba33 1px, transparent 1px, transparent 40px);
+        }
+    </style>
+</head>
+<body class="font-body-md bg-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-outline-variant/30 bg-background/80 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop h-16">
+<div class="font-display text-headline-md font-bold text-primary">Club Abhiyanta-BIT</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-display text-label-md text-primary font-semibold border-b-2 border-primary" href="#">Home</a>
+<a class="font-display text-label-md text-secondary hover:text-primary transition-colors" href="#about">About</a>
+<a class="font-display text-label-md text-secondary hover:text-primary transition-colors" href="#team">Team</a>
+<a class="font-display text-label-md text-secondary hover:text-primary transition-colors" href="#events">Events</a>
+<a class="font-display text-label-md text-secondary hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="font-display text-label-md text-secondary hover:text-primary transition-colors" href="#gallery">Gallery</a>
+<a class="font-display text-label-md text-secondary hover:text-primary transition-colors" href="#roadmap">Roadmap</a>
+<a class="font-display text-label-md text-secondary hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md hover:bg-primary-container transition-all active:translate-y-0.5">
+                Join Lab
+            </button>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden structural-line">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-xl items-center py-xl">
+<div class="z-10">
+<div class="inline-block px-3 py-1 bg-primary/10 text-primary font-label-md rounded-full mb-6">
+                        ESTABLISHED 2018 • BIT CAMPUS
+                    </div>
+<h1 class="font-display text-display text-on-background mb-4">
+                        CLUB <span class="text-primary">ABHIYANTA-BIT</span>
+</h1>
+<p class="font-headline-md text-secondary mb-6 italic">Innovate • Build • Inspire</p>
+<p class="text-body-lg text-secondary mb-10 max-w-lg">
+                        A premium engineering research and innovation hub dedicated to precision engineering, IoT, and Robotics. We bridge the gap between theoretical physics and applied industrial solutions.
+                    </p>
+<div class="flex flex-wrap gap-md">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-lg hover:shadow-lg transition-all">Join Club</button>
+<button class="bg-white border border-secondary/20 text-secondary px-8 py-4 rounded-lg font-label-md text-lg hover:bg-surface-container-low transition-all">Explore Activities</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/5 rounded-full blur-3xl"></div>
+<img alt="Tech Graphic" class="relative rounded-xl border border-outline-variant/30 shadow-sm z-10 w-full object-cover aspect-square" data-alt="A clean, high-tech engineering laboratory with architectural lighting. The scene features precision robotic arms and electronic components on a pristine white workstation, reflecting a professional R&amp;D atmosphere. The color palette is dominated by soft creams and sharp engineering red accents, emphasizing a modern light-mode aesthetic with technical rigor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVe4RGrOdse6qBqRA82JmbtLxF8ApEWQLVGlgXg4PSwJ9BnxNeUNMCBK0z-LZd_cttGpdFqTaqhtDn9nLrn21-ZWEXX3oSiQ3zQLtWqZcz9KnKvtXEx8c2XGuqRO6hjOn8rIfSNQoNT5d2b3qDvmoByW4LEDt7hXrPF8b2IrM8Yb_DITPw5bQ6iUAuj7h2KQDi4ZkD-K0akDK9SLWbmIFJTwDAQw8c_fN8aBB7SkDQm6-i7YHK63ThtpmrXUS7btXhSNTPoshjAXI"/>
+</div>
+</div>
+</section>
+<!-- Stats Section (About Preview) -->
+<section class="bg-surface-container-lowest py-xl border-y border-outline-variant/20" id="about">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center mb-xl">
+<div>
+<div class="text-display text-primary">250+</div>
+<div class="font-label-md text-secondary">ACTIVE MEMBERS</div>
+</div>
+<div>
+<div class="text-display text-primary">45+</div>
+<div class="font-label-md text-secondary">ANNUAL EVENTS</div>
+</div>
+<div>
+<div class="text-display text-primary">12</div>
+<div class="font-label-md text-secondary">R&amp;D PROJECTS</div>
+</div>
+<div>
+<div class="text-display text-primary">30+</div>
+<div class="font-label-md text-secondary">WORKSHOPS</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter">
+<div class="bg-white p-lg rounded-xl border border-outline-variant/30 hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">history</span>
+<h3 class="font-headline-md mb-4">History</h3>
+<p class="text-secondary text-body-md">Founded by visionary engineers at BIT, starting as a small workshop and evolving into the region's premier technical club.</p>
+</div>
+<div class="bg-white p-lg rounded-xl border border-outline-variant/30 hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">rocket_launch</span>
+<h3 class="font-headline-md mb-4">Mission</h3>
+<p class="text-secondary text-body-md">To foster a culture of hands-on learning and technological breakthrough through collaborative engineering projects.</p>
+</div>
+<div class="bg-white p-lg rounded-xl border border-outline-variant/30 hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">visibility</span>
+<h3 class="font-headline-md mb-4">Vision</h3>
+<p class="text-secondary text-body-md">Creating a sustainable ecosystem where innovation meets real-world industrial application for future-ready engineers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Board -->
+<section class="py-xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-lg">
+<div>
+<h2 class="font-display text-headline-lg text-on-background">EXECUTIVE BOARD</h2>
+<div class="h-1 w-24 bg-primary mt-2"></div>
+</div>
+<p class="text-secondary max-w-sm mt-4 md:mt-0">Led by industry-focused researchers and engineering students dedicated to excellence.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Member 1 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-4 bg-surface-container">
+<img alt="Aravind Sharma" class="w-full aspect-[4/5] object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of a male engineering lead, Aravind Sharma, in a bright, modern studio. He is wearing a smart-casual blazer, exuding confidence and technical expertise. The background is a clean, neutral white with subtle architectural shadows, maintaining a high-end startup aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs7oyKifvDp-ycBmLoxPCc5im6670sDj4uotXSxsbLOcg5IcZ8Q6g9jmLc4gSDirKPg0_kUeSiOmLcimjICiP766kIDZT2zqGI36zfqKM1TtYQaU6K_06NGLAmzCRnPVsmFaF9iM3b27qCoPkuOGarSuItJO__dffXXgm2SdMVSGHvZ07RHlyShcyVLMQhYWDNMM7Ndt8gbvUg7gnYk8SLwlcRnxxXxUhqdVw_yTCpqNEjUC4Pwb7Z046xABoViDEEnJICmPjFfFI"/>
+</div>
+<h4 class="font-headline-md">Aravind Sharma</h4>
+<p class="text-primary font-label-md">PRESIDENT</p>
+</div>
+<!-- Member 2 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-4 bg-surface-container">
+<img alt="Priya Verma" class="w-full aspect-[4/5] object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of a female robotics researcher, Priya Verma, in a minimalist lab environment. She has a bright, approachable expression, dressed in professional laboratory attire. The lighting is soft and even, highlighting a sophisticated, light-mode design language with red accents in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPPLLIbNnEUZPr6PctRsDG1rPn8-XP3KqZpycwVefgntQhrg3Ww3LYDLNfDvyx4l9gPPkG-0bGofXyHPTtbUdjDWij544lzUbcenpw7TmPYs2Tr6pUl67XJ6hwmvoGnFCYecxYE69UBwPorc_s3UwP3jGT7LFrLvGLrnAsrcyUPmqDfxy-AQ5iFHYoZ7O7cZ8JwaDB3uQLaNw75PE-itujjqM57Tg-r2_969EyZuL2ZowGz-xwY5kbarO2Koxuu50uMpzwQGNo_eM"/>
+</div>
+<h4 class="font-headline-md">Priya Verma</h4>
+<p class="text-primary font-label-md">VICE PRESIDENT</p>
+</div>
+<!-- Member 3 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-4 bg-surface-container">
+<img alt="Rohan Mehta" class="w-full aspect-[4/5] object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A corporate portrait of Rohan Mehta, an engineering student lead, against a bright architectural backdrop. He is positioned in a modern office space with large windows and clean lines. The overall mood is professional, precise, and innovative, following a strict light-mode theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYKrIE_HMhTVW50lOUagzVt76bq-vTe2rLBp6gNBylw8D4te-_dRTBbAXcN3WU4BoXVUHwtOgkjkTraMlkh_yp4kphsCy-hFvD5_xClY_w2ahWrX1NiKYjaFaPu4S9q0Z4xTF1lF5-8x1zIxKgllQqR5TOZQNbd03h8jGXYLWX1mfS-__3B1JzVzIwiomn_aT-MkKWhA1Y5Z00rw8J9QiiDhSXp-A2K-c6CF2WwDnM0v0WLizkoLgra51xemgzuL97G5VACD6U-RQ"/>
+</div>
+<h4 class="font-headline-md">Rohan Mehta</h4>
+<p class="text-primary font-label-md">SECRETARY</p>
+</div>
+<!-- Member 4 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-4 bg-surface-container">
+<img alt="Sneha Gupta" class="w-full aspect-[4/5] object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional headshot of Sneha Gupta, a technical coordinator, in a minimalist office setting. The lighting is clean and high-key, emphasizing a modern laboratory aesthetic. She wears professional attire, with the overall scene maintaining a cohesive palette of off-whites and dark grays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOuf5o14Yyg2iwsWqak59So2TWxUxh7Dt5RBUprq_hfpRm2AGSYhS4h6akaqn_azftHbyKawbTgv4_EQvZidIJXmlOEmf9SehVYG_Y0ZQ0difwDqy688clUChPOUXpm-SE14aNOm2O-FH68zDZ0Rjz04rsubnfl533570HFmVHqk8AHU8QzkcC8SQnCERjg9T8GRaIm3agPJhOZvUd03qVJQFni-EKAy4WmHElRJ2d1sr6mHb1611MzOYnLNrCHu0qy3ooBhueRLw"/>
+</div>
+<h4 class="font-headline-md">Sneha Gupta</h4>
+<p class="text-primary font-label-md">TREASURER</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Bento Grid -->
+<section class="py-xl bg-surface-container-low" id="projects">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-display text-headline-lg text-on-background mb-lg">R&amp;D PROJECTS</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto">
+<div class="md:col-span-8 bg-white rounded-xl border border-outline-variant/30 overflow-hidden group">
+<img alt="Vending Machine" class="w-full h-64 object-cover" data-alt="A sophisticated IoT-enabled smart vending machine prototype in a bright, modern workshop. The machine features digital displays and precise mechanical parts, surrounded by engineering tools and components. The lighting is high-end and sterile, emphasizing a professional lab environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHEKOSjuqj7imNFUpLtJTO8YkPs-xL9ZWYI4JknBVenMw1RzABu1vTfAWEoVS1_6kHk3Up58B7zC9rshI-S7RCV1czpeHoIghZkYu-kXPhoCIAgst598iC6UBMBGeVKrUH9MybTsaAp9D-RGG0k4h78lMuiHIdcgBh6FoNXnGZQ_cAbP35Ptmq0rtpEHNH8AL-vTYbouEIZ_fULsEMbbBLGC6xNrqivPpfElAIAvdmtr4roBGWx3epElJj9z8KfF5osUISmYmSMfA"/>
+<div class="p-md">
+<h3 class="font-headline-md mb-2">Smart Vending Ecosystem</h3>
+<p class="text-secondary">Fully automated, IoT-integrated dispensing system using blockchain for secure transactions and inventory tracking.</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-md flex flex-col justify-between">
+<h3 class="font-headline-md">IoT Infrastructure</h3>
+<p class="opacity-80">Developing low-latency sensor networks for smart campus monitoring and industrial automation.</p>
+<span class="material-symbols-outlined text-6xl opacity-20">sensors</span>
+</div>
+<div class="md:col-span-4 bg-white rounded-xl border border-outline-variant/30 p-md flex flex-col">
+<span class="material-symbols-outlined text-primary mb-4">precision_manufacturing</span>
+<h3 class="font-headline-md mb-2">Robotics Lab</h3>
+<p class="text-secondary mb-4">Precision calibration and control algorithms for multi-axis robotic arms.</p>
+<a class="text-primary font-label-md mt-auto flex items-center gap-2" href="#">View Specs <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="md:col-span-8 bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="grid md:grid-cols-2 h-full">
+<div class="p-md flex flex-col justify-center">
+<h3 class="font-headline-md mb-2">AI Implementation</h3>
+<p class="text-secondary">Machine learning models for predictive maintenance and real-time object detection in industrial workflows.</p>
+</div>
+<img alt="AI Project" class="w-full h-full object-cover" data-alt="A detailed visualization of artificial intelligence algorithms displayed on a high-resolution laboratory monitor. The interface is clean, dark-themed, and technically dense, contrasted against a bright, modern engineering office background with red status indicators." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqpBgclTVIdMwwL8J1jl2DxoNfUbnAl1w1uJxC5QunKq_6UDIROeyzea4tZQ5K2qcXVsbNtYwug-WoAwXWuiAGs67t50iWeXAD1BOT6Wl53_K136sSPTn-EuiJIJTAEk9FwJKTKZCfh6MLybOIq9kbqccvG1tXV9l3OuSEOHG5PpWSGyxWeE8rIhVhPxV7kBke1zVZLJgG9PxCOxVUfjI96tjmTCY-paZr6WB-DMduYGNn_R5_N3P_CRNagyg_MRtEMhZcuv8x6Po"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Events Timeline -->
+<section class="py-xl" id="events">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-display text-headline-lg text-on-background mb-xl text-center">TECHNICAL WORKSHOPS</h2>
+<div class="relative border-l-2 border-primary/20 ml-4 md:ml-0 md:left-1/2">
+<!-- Event 1 -->
+<div class="mb-lg relative">
+<div class="absolute -left-2.5 md:-left-2.5 w-5 h-5 bg-primary rounded-full border-4 border-background"></div>
+<div class="md:w-1/2 md:pr-12 md:text-right md:ml-0 ml-10">
+<div class="text-primary font-label-md mb-2">SEPTEMBER 15, 2024</div>
+<h3 class="font-headline-md">Embedded Systems Workshop</h3>
+<p class="text-secondary">Intensive hands-on training on ARM architecture and real-time operating systems.</p>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="mb-lg relative">
+<div class="absolute -left-2.5 md:-left-2.5 w-5 h-5 bg-primary rounded-full border-4 border-background"></div>
+<div class="md:w-1/2 md:pl-12 md:ml-[50%] ml-10">
+<div class="text-primary font-label-md mb-2">OCTOBER 02, 2024</div>
+<h3 class="font-headline-md">Robotics Competition</h3>
+<p class="text-secondary">Annual inter-college maze-solver and robo-war tournament at the BIT Arena.</p>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="mb-lg relative">
+<div class="absolute -left-2.5 md:-left-2.5 w-5 h-5 bg-primary rounded-full border-4 border-background"></div>
+<div class="md:w-1/2 md:pr-12 md:text-right md:ml-0 ml-10">
+<div class="text-primary font-label-md mb-2">NOVEMBER 10, 2024</div>
+<h3 class="font-headline-md">Hack-BIT 2024</h3>
+<p class="text-secondary">48-hour engineering marathon focused on building sustainable hardware solutions.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SWOT Analysis -->
+<section class="py-xl bg-surface-container-highest/30">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-display text-headline-lg text-on-background mb-lg">STRATEGIC ANALYSIS</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-white p-lg rounded-xl border-t-4 border-primary shadow-sm">
+<h4 class="font-display text-headline-md mb-4 text-primary">STRENGTHS</h4>
+<ul class="space-y-2 text-secondary text-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Advanced Lab Equipment</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Expert Faculty Mentors</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Diverse Technical Talent</li>
+</ul>
+</div>
+<div class="bg-white p-lg rounded-xl border-t-4 border-secondary shadow-sm">
+<h4 class="font-display text-headline-md mb-4 text-secondary">WEAKNESSES</h4>
+<ul class="space-y-2 text-secondary text-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">error</span> Limited Initial Funding</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">error</span> Fast Tech Obsolescence</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">error</span> Resource Bottlenecks</li>
+</ul>
+</div>
+<div class="bg-white p-lg rounded-xl border-t-4 border-primary shadow-sm">
+<h4 class="font-display text-headline-md mb-4 text-primary">OPPORTUNITIES</h4>
+<ul class="space-y-2 text-secondary text-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">trending_up</span> Industry Partnerships</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">trending_up</span> Patent Filing Support</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">trending_up</span> Tech Startup Incubation</li>
+</ul>
+</div>
+<div class="bg-white p-lg rounded-xl border-t-4 border-secondary shadow-sm">
+<h4 class="font-display text-headline-md mb-4 text-secondary">THREATS</h4>
+<ul class="space-y-2 text-secondary text-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">warning</span> Economic Volatility</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">warning</span> Global Tech Shifts</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">warning</span> Regional Competition</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Roadmap -->
+<section class="py-xl overflow-hidden structural-line" id="roadmap">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-display text-headline-lg text-on-background mb-lg">FUTURE VISION ROADMAP</h2>
+<div class="flex flex-col gap-gutter">
+<div class="flex gap-md items-start">
+<div class="w-24 font-display text-headline-md text-primary shrink-0">Q1 25</div>
+<div class="bg-white p-md border border-outline-variant/30 rounded-xl grow">
+<h4 class="font-headline-md mb-2">Smart Campus Beta</h4>
+<p class="text-secondary">Deploying the first phase of IoT sensor networks across the BIT campus buildings.</p>
+</div>
+</div>
+<div class="flex gap-md items-start">
+<div class="w-24 font-display text-headline-md text-primary shrink-0">Q3 25</div>
+<div class="bg-white p-md border border-outline-variant/30 rounded-xl grow">
+<h4 class="font-headline-md mb-2">Robotics Center Expansion</h4>
+<p class="text-secondary">Establishing a dedicated fabrication wing for advanced drone and rover prototyping.</p>
+</div>
+</div>
+<div class="flex gap-md items-start">
+<div class="w-24 font-display text-headline-md text-primary shrink-0">Q4 25</div>
+<div class="bg-white p-md border border-outline-variant/30 rounded-xl grow">
+<h4 class="font-headline-md mb-2">Incubation Launch</h4>
+<p class="text-secondary">Official launch of the Club Abhiyanta Startup Program for member-led ventures.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership -->
+<section class="py-xl bg-primary text-on-primary" id="membership">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-display text-display mb-6">READY TO LEAD?</h2>
+<p class="text-on-primary-container text-body-lg mb-10">Join the next generation of engineers and innovators. Secure your place in our research lab today.</p>
+<button class="bg-white text-primary px-10 py-4 rounded-lg font-display text-headline-md hover:shadow-xl transition-all active:scale-95">
+                        Start Registration
+                    </button>
+</div>
+<div class="flex flex-col items-center bg-white/10 p-lg rounded-2xl backdrop-blur-sm border border-white/20">
+<div class="bg-white p-4 rounded-xl mb-4">
+<img alt="Registration QR Code" class="w-48 h-48" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkC12y4XjWFJ9K5QQq36Ry21yZ3UpOzl33YGcqpvOlFX-N5V1bYZG9aeejSSaPI6b1HPHM0CcGCw3Pj1fCRF2IWisGkApcfZgfLNbWvMBIBgS45Ld8I45DGbebnbzf6BeliNw2XSW__qLHMbJmEktRl7uPKDC9L021PSiHktf85uJBtMMQzuoTzDQYQVflaOnLJqghduRiG7_qlIQP4GHYofIcstUZ6oEBMzAxfiPNyRkoVgXKHSNPRBLvCay9elEEZz5HAYcNass"/>
+</div>
+<p class="font-label-md text-white tracking-widest uppercase">Scan to Apply Instantly</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid md:grid-cols-2 gap-xl">
+<div>
+<h2 class="font-display text-headline-lg mb-lg">CONTACT LAB</h2>
+<div class="space-y-lg">
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+<h4 class="font-headline-md">Headquarters</h4>
+<p class="text-secondary">Main Technical Building, Block C, BIT Campus.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+<div>
+<h4 class="font-headline-md">Inquiries</h4>
+<p class="text-secondary">innovate@abhiyanta-bit.edu</p>
+</div>
+</div>
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-primary text-3xl">call</span>
+<div>
+<h4 class="font-headline-md">Lab Support</h4>
+<p class="text-secondary">+91 (123) 456-7890</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-lg rounded-xl border border-outline-variant/30 shadow-sm">
+<form class="space-y-md">
+<div class="grid grid-cols-2 gap-md">
+<div>
+<label class="block font-label-md text-secondary mb-2">FULL NAME</label>
+<input class="w-full border-secondary/20 rounded-lg p-3 focus:ring-primary focus:border-primary" placeholder="Enter name" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-secondary mb-2">ROLL NUMBER</label>
+<input class="w-full border-secondary/20 rounded-lg p-3 focus:ring-primary focus:border-primary" placeholder="BIT-XXXX" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-secondary mb-2">EMAIL ADDRESS</label>
+<input class="w-full border-secondary/20 rounded-lg p-3 focus:ring-primary focus:border-primary" placeholder="name@email.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-secondary mb-2">MESSAGE</label>
+<textarea class="w-full border-secondary/20 rounded-lg p-3 h-32 focus:ring-primary focus:border-primary" placeholder="How can we collaborate?"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-md text-lg hover:bg-primary-container transition-all">SEND MESSAGE</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-[1200px] mx-auto py-lg px-margin-mobile md:px-margin-desktop">
+<div>
+<div class="font-display text-headline-md font-bold text-primary mb-4">Club Abhiyanta-BIT</div>
+<p class="text-secondary max-w-sm mb-6">Precision engineering and technological innovation hub. Empowering the engineers of tomorrow through rigorous research and development.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-secondary hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-secondary hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant/50 flex items-center justify-center text-secondary hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">hub</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-gutter">
+<div>
+<h5 class="font-label-md text-primary mb-4">RESOURCES</h5>
+<ul class="space-y-2">
+<li><a class="text-secondary hover:text-primary transition-all" href="#">Documentation</a></li>
+<li><a class="text-secondary hover:text-primary transition-all" href="#">Research Labs</a></li>
+<li><a class="text-secondary hover:text-primary transition-all" href="#">Project Archive</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-primary mb-4">LEGAL</h5>
+<ul class="space-y-2">
+<li><a class="text-secondary hover:text-primary transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-secondary hover:text-primary transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-secondary hover:text-primary transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto py-md px-margin-mobile md:px-margin-desktop border-t border-outline-variant/30 text-center">
+<p class="text-secondary text-body-md">© 2024 Club Abhiyanta-BIT. Precision Engineering &amp; Innovation.</p>
+</div>
+</footer>
+</body></html>

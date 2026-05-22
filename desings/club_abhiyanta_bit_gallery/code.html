@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery | Club Abhiyanta-BIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#464747",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e3e3dd",
+                    "surface-tint": "#bc111e",
+                    "surface-container-high": "#e8e8e2",
+                    "surface-container": "#eeeee8",
+                    "on-surface": "#1a1c19",
+                    "surface-bright": "#fafaf3",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "primary-container": "#c81d25",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-primary-fixed": "#410003",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#ffb3ad",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#ffdad6",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#e5bdba",
+                    "on-secondary-container": "#636262",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1a1c19",
+                    "outline": "#906f6c",
+                    "surface-dim": "#dadad4",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface": "#fafaf3",
+                    "primary": "#a10014",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#5c403d",
+                    "inverse-surface": "#2f312d",
+                    "inverse-on-surface": "#f1f1eb",
+                    "on-tertiary-container": "#e6e4e4",
+                    "on-primary-fixed-variant": "#930011",
+                    "surface-container-low": "#f4f4ee",
+                    "on-primary-container": "#ffddda",
+                    "background": "#fafaf3",
+                    "surface-container-highest": "#e3e3dd",
+                    "secondary": "#5f5e5e",
+                    "tertiary": "#4e4e4e",
+                    "tertiary-fixed": "#e4e2e2",
+                    "secondary-container": "#e2dfde",
+                    "tertiary-container": "#666666",
+                    "secondary-fixed-dim": "#c8c6c5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "lg": "48px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "sm": "16px",
+                    "xl": "80px",
+                    "margin-desktop": "64px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "display": ["Montserrat"],
+                    "label-md": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "code": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "code": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background dark:bg-surface-dim border-b border-surface-variant dark:border-on-surface-variant">
+<nav class="flex justify-between items-center px-margin-desktop h-20 max-w-[1200px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                Club Abhiyanta-BIT
+            </div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">About</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Team</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md" href="#">Events</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Projects</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Roadmap</a>
+</div>
+<button class="bg-primary text-on-primary px-md py-xs rounded hover:opacity-90 active:scale-95 transition-all font-label-md text-label-md">
+                Contact
+            </button>
+</nav>
+</header>
+<main class="pt-xl pb-xl">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mt-xl mb-lg">
+<div class="border-l-4 border-primary pl-md">
+<h1 class="font-display text-display text-on-surface mb-xs uppercase tracking-tight">Visual Archives</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+                    Documenting the intersection of precision engineering and creative innovation. Explore our journey through workshops, competitions, and laboratory breakthroughs.
+                </p>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-lg">
+<div class="flex flex-wrap gap-xs">
+<button class="bg-primary text-on-primary px-md py-xs rounded font-label-md text-label-md">All Entries</button>
+<button class="bg-surface-container border border-surface-variant text-secondary px-md py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Workshops</button>
+<button class="bg-surface-container border border-surface-variant text-secondary px-md py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Team Meetings</button>
+<button class="bg-surface-container border border-surface-variant text-secondary px-md py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Award Ceremony</button>
+<button class="bg-surface-container border border-surface-variant text-secondary px-md py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Tech-Fest 2024</button>
+</div>
+</section>
+<!-- Masonry Gallery -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop">
+<div class="masonry-grid">
+<!-- Item 1: Workshop -->
+<div class="masonry-item group relative overflow-hidden bg-white border border-surface-variant">
+<img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A high-precision engineering workshop environment where students in clean lab coats are focused on a complex robotics assembly. The lighting is sterile and bright, emphasizing the technical components and the Engineering Red accents on the machines. The scene conveys a sense of professional R&amp;D and meticulous focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDppMAsjCfo9nSptUxyPz-aN4s_uLWU0nwGFTgTcIQEIsCSbhi5z6NH1dR-1YSeswlihbjpRcN8iY5gzVMClNP9ObfwYM_nBF_1G-3E8iGXQBdZREjs5OLXfNs96DbyUnEYAfVo5EKK4TPC19DgbLNVdRsZpwsCHUcrrQUYAO5dm-DsicFoeY6hbfCMrYI8qNEOSHcD56gj07jpqDMcaN2J5r6CqUf77cMYe2ODXZFYoETaiSPCt0tVkBpFrlbyPQ2ceVFp4Y2_scs"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-md">
+<div class="bg-white p-sm w-full border-t-2 border-primary">
+<span class="font-label-md text-[10px] text-primary uppercase tracking-widest">Session: 04.24</span>
+<h3 class="font-headline-md text-body-md font-bold text-on-surface">Advanced Robotics Workshop</h3>
+</div>
+</div>
+</div>
+<!-- Item 2: Award -->
+<div class="masonry-item group relative overflow-hidden bg-white border border-surface-variant">
+<img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A minimalist presentation of a crystal engineering award sitting on a pristine white surface. The background is a soft creamy white with subtle structural shadows. Engineering Red highlights in the room's architecture reflect on the award's surface, creating a prestigious and high-end aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxNklSQRbR3tL_5_47DjRS0WwEcu6pVw6l-nJP4-pVDWvGTsaEyWSYVtodWfrKXJv5KCxgeyJ5TArWTKBSL2xZbhZ8CyY2Rqy9r13X6jXOLNqNcZf_atnIe0A9-0Reg1aFBfkp2vGXFOnccjLpM3l3zoEqFDiCWNXCK5dC1RieANhEVY6U5NX5rFfPmAe4j8iirou0SGAapqMtkXueY6j3CeEdGp4eK0El6S2CrYtxDxc9mRBysdigf6PbOTtAMKvWQVK1_X-ilt0"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-md">
+<div class="bg-white p-sm w-full border-t-2 border-primary">
+<span class="font-label-md text-[10px] text-primary uppercase tracking-widest">Achievement</span>
+<h3 class="font-headline-md text-body-md font-bold text-on-surface">National Innovators Gold Medal</h3>
+</div>
+</div>
+</div>
+<!-- Item 3: Team Meeting -->
+<div class="masonry-item group relative overflow-hidden bg-white border border-surface-variant">
+<img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A candid shot of a diverse engineering team brainstorming in a modern, light-filled laboratory space. Schematic drawings are visible on glass walls in the background. The atmosphere is collaborative and professional, with a clean aesthetic dominated by white and gray tones and sharp red accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmkNm0uLFpRnPb9fYFtOFVAaSFg-gQUsZquZoUwZU1dYLPdn8IdorlHRToEKlsPz9HVVMuVANtRKWA7I-Z_IT-rYa3KCTRL4WTLGk-l1k8UMhGrD5qx7WJraVozgFP1UBzmy10ZA4EGQDU6DLByZUN6YR0V6d_9aZRu2OcxmNXT-U-GjDlVcvgKGMVYpItP9og6CEb74VXpXDmS-wInr9xepQwoymBY7GcEFvK9NkO_D5Xi3XCBNtSSY1Klk0swTptrKhP4ypQ1gk"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-md">
+<div class="bg-white p-sm w-full border-t-2 border-primary">
+<span class="font-label-md text-[10px] text-primary uppercase tracking-widest">Collaboration</span>
+<h3 class="font-headline-md text-body-md font-bold text-on-surface">Core Committee Strategy Meet</h3>
+</div>
+</div>
+</div>
+<!-- Item 4: Tech Project -->
+<div class="masonry-item group relative overflow-hidden bg-white border border-surface-variant">
+<img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close-up of a high-tech circuit board prototype with glowing red LEDs in a dark, sterile laboratory environment. The image uses a shallow depth of field to focus on the precision-engineered components, highlighting the technical rigor and futuristic focus of the engineering club's work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnxp3AgZ5GwYxfe0q97iYlAwju-WelrezNeCcFwWDh0LuDgaz69W1qoJMd8xdJ3PBMdq8tPiHJviuGVLiKhbeNvCKuNaZno2jS1kMk7Vh654eLPMXQOTPmnTgaHiUrGTGpcyqktSQo_5ou8SxoNoKWn0gLigS_wmxG6NUkg7TZ2b-nDMgiXsqOIg7UnfWMhL8yRiWCZizjZGspttyBoHZanHWdiwVcTfSb4Aentc_ynmJnPPXUxeArGWkCYKO_ok19AXLtu_LuVX8"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-md">
+<div class="bg-white p-sm w-full border-t-2 border-primary">
+<span class="font-label-md text-[10px] text-primary uppercase tracking-widest">Project: Alpha</span>
+<h3 class="font-headline-md text-body-md font-bold text-on-surface">Embedded Systems Development</h3>
+</div>
+</div>
+</div>
+<!-- Item 5: Event Photo -->
+<div class="masonry-item group relative overflow-hidden bg-white border border-surface-variant">
+<img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A wide-angle shot of a large tech conference stage with a minimalist, architectural design. The lighting is high-contrast with brilliant whites and deep shadows, punctuated by sharp Engineering Red laser beams and screen graphics. A crowd of engaged students is visible in the foreground." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfDmkLgWK_IY1Bk4fFuYlvZ9vPQmKn8Dw6D1KlKrrzoT3rFnBbZWCDe0z24ff9ci4yDQ2C9e1Qyza5QZxPbHzHJBcD9EVX1OfFcCltyMgWVPlnvodB4ZHmmyuXgNqvD0rjQev9UinlOUBt-xSC1FfM9gzZ5CeHLlUpuay3dsccvmhJCVVwldG-MztRY0HzKo73q3074XXa33uq9xgkAx_L0F5DmqtFfllVWg3I096cZiHLfEuipb86QB8GzyXVE368iXyNGY42TYw"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-md">
+<div class="bg-white p-sm w-full border-t-2 border-primary">
+<span class="font-label-md text-[10px] text-primary uppercase tracking-widest">Event: TechFest</span>
+<h3 class="font-headline-md text-body-md font-bold text-on-surface">Annual Engineering Summit 2024</h3>
+</div>
+</div>
+</div>
+<!-- Item 6: Lab Work -->
+<div class="masonry-item group relative overflow-hidden bg-white border border-surface-variant">
+<img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A focused image of a researcher working with precision tools in a clean, white-on-white laboratory. The scene is illuminated by soft, diffused daylight coming from large windows. Minimalist equipment and a splash of Engineering Red on a digital display create a technical yet inviting atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByWgNhJ7pZuJTMrHtJytXJLSVecBuW9qwBpu3l3r3206BFRZdKT3LQZWRWXcQMk610yyGhSZiuXlfBX4yU30iWNlrdilj15RwNQOb5HlzpDZeya-wNeLt-vRXoai_-hY9PsX2FXPh55coVH_Pbj8MxXHmR6Wlz1oguwkzAyK4O9ckhT4U7h2uIcogoKQw0Eci8EOk1T565D4G9_7ZpHge_AYBSjk_3jLur8KQV4ms0gJ-QebFiuulVFYuRZzGtlOCHHvnHzP1x0aA"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-md">
+<div class="bg-white p-sm w-full border-t-2 border-primary">
+<span class="font-label-md text-[10px] text-primary uppercase tracking-widest">Lab Access</span>
+<h3 class="font-headline-md text-body-md font-bold text-on-surface">Micro-Engineering Lab Session</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pagination / Load More -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop py-lg flex justify-center">
+<button class="flex items-center gap-xs border border-on-surface text-on-surface px-xl py-sm hover:bg-on-surface hover:text-surface transition-all">
+<span class="font-label-md text-label-md uppercase tracking-widest">Load More Archives</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-highest dark:bg-inverse-surface border-t border-surface-variant dark:border-on-surface-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-xl max-w-[1200px] mx-auto">
+<div class="mb-md md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed mb-xs">
+                    Club Abhiyanta-BIT
+                </div>
+<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim">
+                    © 2024 Club Abhiyanta-BIT. Precision in Engineering.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#">Laboratory Access</a>
+</div>
+<div class="mt-md md:mt-0 flex gap-sm">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="language">language</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="share">share</span>
+</div>
+</div>
+</footer>
+<!-- Simple Lightbox Simulation Overlay (Hidden) -->
+<div class="fixed inset-0 bg-black/90 z-[100] hidden flex items-center justify-center p-xl" id="lightbox">
+<button class="absolute top-md right-md text-white">
+<span class="material-symbols-outlined text-[48px]" data-icon="close">close</span>
+</button>
+<img class="max-h-full max-w-full object-contain border-4 border-white/10" id="lightbox-img" src=""/>
+</div>
+</body></html>

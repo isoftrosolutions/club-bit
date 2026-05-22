@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#464747",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e3e3dd",
+                    "surface-tint": "#bc111e",
+                    "surface-container-high": "#e8e8e2",
+                    "surface-container": "#eeeee8",
+                    "on-surface": "#1a1c19",
+                    "surface-bright": "#fafaf3",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "primary-container": "#c81d25",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-primary-fixed": "#410003",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#ffb3ad",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#ffdad6",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#e5bdba",
+                    "on-secondary-container": "#636262",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1a1c19",
+                    "outline": "#906f6c",
+                    "surface-dim": "#dadad4",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface": "#fafaf3",
+                    "primary": "#a10014",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#5c403d",
+                    "inverse-surface": "#2f312d",
+                    "inverse-on-surface": "#f1f1eb",
+                    "on-tertiary-container": "#e6e4e4",
+                    "on-primary-fixed-variant": "#930011",
+                    "surface-container-low": "#f4f4ee",
+                    "on-primary-container": "#ffddda",
+                    "background": "#fafaf3",
+                    "surface-container-highest": "#e3e3dd",
+                    "secondary": "#5f5e5e",
+                    "tertiary": "#4e4e4e",
+                    "tertiary-fixed": "#e4e2e2",
+                    "secondary-container": "#e2dfde",
+                    "tertiary-container": "#666666",
+                    "secondary-fixed-dim": "#c8c6c5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "lg": "48px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "sm": "16px",
+                    "xl": "80px",
+                    "margin-desktop": "64px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "display": ["Montserrat"],
+                    "label-md": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "code": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "code": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fafaf3;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background border-b border-surface-variant">
+<nav class="flex justify-between items-center px-margin-desktop h-20 max-w-[1200px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">Club Abhiyanta-BIT</div>
+<div class="hidden md:flex items-center gap-md">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="#">About</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Team</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Events</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Projects</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Roadmap</a>
+</div>
+<button class="bg-primary text-on-primary px-sm py-xs font-label-md text-label-md rounded active:scale-95 transition-transform">Contact</button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Engineering Laboratory" class="w-full h-full object-cover opacity-20 grayscale" data-alt="A cinematic, wide-angle shot of a high-tech engineering laboratory with clean white surfaces and sophisticated machinery. Soft ambient light illuminates the space, highlighting technical blueprints and electronic components on workstations. The color palette is dominated by creamy whites and deep reds, creating an atmosphere of precision, innovation, and professional excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUMngbi2nXq0UOZ5CCVZ44Y70AIGVWi2bt4Da3SY06gljtXBGzEOl0pIq74o1DWRElnA249marsn6TpLFnDpbAsalC35RBVhoup8kceDzFFmJA29RCghq8C662xHB6ay1oTMzcb7iJ0t23kBygHcqOJXYj4ledhuO08vI5B8EFGRQhCeR9cI573mbp_SF1kGTiYGvcZyIeQTypYrlb3UsvBMdR449YFZJwRNUbtloWj4s8WwXA0waczKReBDN780l48wLWEgDIgns"/>
+</div>
+<div class="relative z-10 max-w-[1200px] mx-auto px-margin-desktop w-full">
+<div class="max-w-2xl">
+<span class="inline-block bg-primary text-on-primary px-xs py-1 text-label-md font-label-md mb-md">SINCE 2018</span>
+<h1 class="font-display text-display mb-sm text-on-background">Defining the <span class="text-primary">Next Era</span> of Engineering.</h1>
+<p class="font-body-lg text-body-lg text-secondary">A community of builders, innovators, and thinkers dedicated to pushing the boundaries of technology at BIT.</p>
+</div>
+</div>
+</section>
+<!-- Stats Section (Bento Inspired) -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-lowest border border-surface-variant p-md flex flex-col items-center justify-center text-center">
+<span class="font-display text-display text-primary">250+</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Active Members</span>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant p-md flex flex-col items-center justify-center text-center">
+<span class="font-display text-display text-primary">45+</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Global Events</span>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant p-md flex flex-col items-center justify-center text-center">
+<span class="font-display text-display text-primary">120+</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Live Projects</span>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant p-md flex flex-col items-center justify-center text-center">
+<span class="font-display text-display text-primary">80+</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Tech Workshops</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision -->
+<section class="py-xl">
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid md:grid-cols-2 gap-xl">
+<div class="space-y-md">
+<div class="flex items-center gap-sm">
+<div class="w-12 h-1 bg-primary"></div>
+<h2 class="font-headline-lg text-headline-lg">Our Mission</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        To bridge the gap between academic theory and industrial practice. We empower student engineers by providing a rigorous environment for experimentation, peer-to-peer learning, and high-impact project development.
+                    </p>
+<div class="bg-surface-container-high p-md border-l-4 border-primary italic text-on-surface">
+                        "Precision isn't just a goal; it's our standard of operation."
+                    </div>
+</div>
+<div class="space-y-md">
+<div class="flex items-center gap-sm">
+<div class="w-12 h-1 bg-primary"></div>
+<h2 class="font-headline-lg text-headline-lg">Future Vision</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Establishing Club Abhiyanta as the premier innovation hub within BIT, where every student's technical curiosity can be transformed into a tangible engineering marvel that serves society.
+                    </p>
+<div class="flex gap-sm pt-sm">
+<span class="bg-surface-variant px-sm py-xs text-label-md rounded">R&amp;D Leadership</span>
+<span class="bg-surface-variant px-sm py-xs text-label-md rounded">Global Impact</span>
+</div>
+</div>
+</div>
+</section>
+<!-- History Timeline -->
+<section class="py-xl bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg mb-xl text-center">The Engineering Odyssey</h2>
+<div class="relative border-l-2 border-surface-variant ml-4 md:ml-0 md:flex md:border-l-0 md:border-t-2 md:pt-md md:justify-between">
+<div class="mb-lg pl-md md:pl-0 md:w-1/4">
+<div class="absolute -left-2 w-4 h-4 bg-primary rounded-full md:relative md:left-0 md:mb-xs"></div>
+<h3 class="font-headline-md text-headline-md text-primary">2018</h3>
+<h4 class="font-label-md text-label-md text-on-background mb-xs">FOUNDATION</h4>
+<p class="font-body-md text-body-md text-secondary">A small group of visionaries establish the club to centralize tech talent at BIT.</p>
+</div>
+<div class="mb-lg pl-md md:pl-0 md:w-1/4">
+<div class="absolute -left-2 w-4 h-4 bg-primary rounded-full md:relative md:left-0 md:mb-xs"></div>
+<h3 class="font-headline-md text-headline-md text-primary">2020</h3>
+<h4 class="font-label-md text-label-md text-on-background mb-xs">LAB EXPANSION</h4>
+<p class="font-body-md text-body-md text-secondary">Secured state-of-the-art facilities and launched the first major drone project.</p>
+</div>
+<div class="mb-lg pl-md md:pl-0 md:w-1/4">
+<div class="absolute -left-2 w-4 h-4 bg-primary rounded-full md:relative md:left-0 md:mb-xs"></div>
+<h3 class="font-headline-md text-headline-md text-primary">2022</h3>
+<h4 class="font-label-md text-label-md text-on-background mb-xs">GLOBAL RECOGNITION</h4>
+<p class="font-body-md text-body-md text-secondary">Won international acclaim at the National Tech Symposium for AI-driven sustainability.</p>
+</div>
+<div class="mb-lg pl-md md:pl-0 md:w-1/4">
+<div class="absolute -left-2 w-4 h-4 bg-primary rounded-full md:relative md:left-0 md:mb-xs"></div>
+<h3 class="font-headline-md text-headline-md text-primary">2024</h3>
+<h4 class="font-label-md text-label-md text-on-background mb-xs">PRECISION R&amp;D</h4>
+<p class="font-body-md text-body-md text-secondary">Transitioned to a full-scale R&amp;D model with over 120 ongoing collaborations.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values -->
+<section class="py-xl">
+<div class="max-w-[1200px] mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-xl items-center">
+<div class="w-full md:w-1/2">
+<img alt="Innovation and Learning" class="w-full h-auto rounded shadow-sm border border-surface-variant" data-alt="A high-contrast, professional photograph of diverse students working collaboratively on a complex robotics project. The setting is a brightly lit, modern engineering workshop with clean industrial aesthetics. Focus is on their hands and the intricate electronic circuitry, emphasizing innovation, teamwork, and the club's core values. The lighting is crisp and the atmosphere is one of intense focus and shared learning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbw7KZ6TDpjruOOBzi4B6X-WCH8v9zJ7347FyxJ1fxfXDUWbYLMHh3ShZNSx1fxHrpjGot9V-crzbJwbxee-w0mEq_xJ0kbbDE-THToyv_-8z1yaPMU4ZPuN2LoIQ8ua50otRRJ194lhhc8_e-nNk4LSBo-jeI9Hq9hI66sWR_yyl77XJdJj_51DBu5-GyiPfMRM4MXw5Kb8QhcrD-cIj74UydUdLCOfL-0dr6tVVkQxL8lPRMcn5nmChSXPzbDb4D30dbw7HeFAc"/>
+</div>
+<div class="w-full md:w-1/2 space-y-lg">
+<h2 class="font-headline-lg text-headline-lg">Our Core Pillars</h2>
+<div class="space-y-md">
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="lightbulb">lightbulb</span>
+<div>
+<h4 class="font-headline-md text-headline-md">Radical Innovation</h4>
+<p class="font-body-md text-body-md text-secondary">We don't just follow trends; we create them by challenging existing engineering paradigms through rapid prototyping.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="school">school</span>
+<div>
+<h4 class="font-headline-md text-headline-md">Infinite Learning</h4>
+<p class="font-body-md text-body-md text-secondary">Education is a continuous cycle. Our workshops and seminars ensure that we are always at the bleeding edge of tech.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="precision_manufacturing">precision_manufacturing</span>
+<div>
+<h4 class="font-headline-md text-headline-md">Technical Rigor</h4>
+<p class="font-body-md text-body-md text-secondary">Every calculation, every weld, and every line of code is scrutinized to meet industrial-grade standards.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Laboratory CTA -->
+<section class="py-xl bg-primary text-on-primary">
+<div class="max-w-[1200px] mx-auto px-margin-desktop text-center">
+<h2 class="font-display text-display mb-md">Ready to Build the Future?</h2>
+<p class="font-body-lg text-body-lg mb-lg max-w-2xl mx-auto opacity-90">Our laboratory doors are always open to those with the curiosity to ask "Why?" and the courage to ask "How?"</p>
+<div class="flex flex-col sm:flex-row justify-center gap-sm">
+<button class="bg-on-primary text-primary px-lg py-sm font-label-md text-label-md rounded-full shadow-lg hover:scale-105 transition-transform">Apply for Membership</button>
+<button class="border-2 border-on-primary text-on-primary px-lg py-sm font-label-md text-label-md rounded-full hover:bg-on-primary hover:text-primary transition-all">Visit the Lab</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-highest border-t border-surface-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-xl max-w-[1200px] mx-auto">
+<div class="mb-md md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-xs">Club Abhiyanta-BIT</div>
+<p class="font-body-md text-body-md text-on-surface opacity-70">© 2024 Club Abhiyanta-BIT. Precision in Engineering.</p>
+</div>
+<div class="flex gap-lg">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Laboratory Access</a>
+</div>
+</div>
+</footer>
+</body></html>

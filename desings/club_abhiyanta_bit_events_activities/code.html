@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Events | Club Abhiyanta-BIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#464747",
+                      "tertiary-fixed-dim": "#c7c6c6",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#e3e3dd",
+                      "surface-tint": "#bc111e",
+                      "surface-container-high": "#e8e8e2",
+                      "surface-container": "#eeeee8",
+                      "on-surface": "#1a1c19",
+                      "surface-bright": "#fafaf3",
+                      "primary-fixed-dim": "#ffb3ad",
+                      "primary-container": "#c81d25",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "on-primary-fixed": "#410003",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#ffb3ad",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#ffdad6",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#e5bdba",
+                      "on-secondary-container": "#636262",
+                      "error-container": "#ffdad6",
+                      "on-background": "#1a1c19",
+                      "outline": "#906f6c",
+                      "surface-dim": "#dadad4",
+                      "secondary-fixed": "#e5e2e1",
+                      "surface": "#fafaf3",
+                      "primary": "#a10014",
+                      "on-secondary-fixed-variant": "#474746",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#5c403d",
+                      "inverse-surface": "#2f312d",
+                      "inverse-on-surface": "#f1f1eb",
+                      "on-tertiary-container": "#e6e4e4",
+                      "on-primary-fixed-variant": "#930011",
+                      "surface-container-low": "#f4f4ee",
+                      "on-primary-container": "#ffddda",
+                      "background": "#fafaf3",
+                      "surface-container-highest": "#e3e3dd",
+                      "secondary": "#5f5e5e",
+                      "tertiary": "#4e4e4e",
+                      "tertiary-fixed": "#e4e2e2",
+                      "secondary-container": "#e2dfde",
+                      "tertiary-container": "#666666",
+                      "secondary-fixed-dim": "#c8c6c5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "lg": "48px",
+                      "base": "4px",
+                      "xs": "8px",
+                      "sm": "16px",
+                      "xl": "80px",
+                      "margin-desktop": "64px",
+                      "md": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Montserrat"],
+                      "display": ["Montserrat"],
+                      "label-md": ["Montserrat"],
+                      "body-md": ["Montserrat"],
+                      "body-lg": ["Montserrat"],
+                      "headline-md": ["Montserrat"],
+                      "code": ["Montserrat"],
+                      "headline-lg-mobile": ["Montserrat"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "code": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background border-b border-surface-variant h-20">
+<div class="flex justify-between items-center px-margin-desktop h-full max-w-[1200px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">Club Abhiyanta-BIT</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Team</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Events</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Projects</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Roadmap</a>
+</nav>
+<button class="bg-primary text-on-primary px-md py-xs rounded-none font-label-md active:scale-95 transition-transform">
+                Contact
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-xl">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-xl">
+<div class="flex flex-col md:flex-row gap-lg items-end justify-between">
+<div class="max-w-2xl">
+<span class="text-primary font-label-md tracking-widest uppercase mb-base block">Engineering the Future</span>
+<h1 class="font-display text-display text-on-surface mb-md">Laboratory of Innovation: Events 2024</h1>
+<p class="font-body-lg text-body-lg text-secondary">A curated series of high-precision technical workshops, AI deep-dives, and competitive hackathons designed to push the boundaries of modern engineering.</p>
+</div>
+<div class="flex gap-xs">
+<button class="p-xs border border-outline text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+<button class="p-xs border border-outline text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">calendar_month</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Bento Event Highlights -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Featured Event Card -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-[#EBEBE5] p-lg flex flex-col justify-between group">
+<div>
+<div class="flex justify-between items-start mb-md">
+<span class="bg-primary text-on-primary px-sm py-xs font-label-md rounded-none uppercase">Upcoming Flagship</span>
+<span class="text-secondary font-code text-code uppercase">May 15-17, 2024</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg mb-md group-hover:text-primary transition-colors">National Level AI &amp; Robotics Symposium</h2>
+<p class="font-body-md text-body-md text-secondary max-w-lg">Three days of intensive workshops, research presentations, and the annual BIT Robot-Combat Championship. Join industry experts from top tech giants.</p>
+</div>
+<div class="mt-lg flex items-center justify-between">
+<div class="flex -space-x-2">
+<div class="w-10 h-10 rounded-full border-2 border-white bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional male engineer portrait with neutral lighting, clean white background, and a sharp business-casual aesthetic. The style is minimalist and high-contrast, reflecting a modern R&amp;D facility atmosphere. The person has a serious but inviting expression, fitting a laboratory mentor role." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlbG_h0kV96LGyxEEwVZYHw3iM9-i8a6HPumi_g8HGtlpIaco7JYfBXRBa7h_nSfyWyzS5-EDtmeWMNfc1qhplnzHeIk0uGvLpun7-z9mDDKJ1GoTuWrvtWYykYnm-LYaYSLJBVX4qr-9O7ecFtz-DO9sVXKr5duhJGuY38yVyJjjmglrGl3tvMb40xk67cqyUs9z1j7KlAr_jEblYYFhKweWoR0ifyQQhIW_r0YSQeJRy1ZQ0QgJqsrp6RHOvN77zFAOHL1_2uUk"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional female tech lead portrait with soft studio lighting. She is wearing modern glasses and a dark blazer against a pristine light-grey background. The image maintains the high-end startup aesthetic with sterile but warm lighting and technical clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEU67togPCP_gccbJmnZOARP7S--aHoZsuUv-MpnaKiUNW6RjRxMgmkstEP5l-4zTTLy05nez2Nz6KzvqoUtpVCXl8ULd9W2E7-q9Ag4-S18a2TrD_V0FcB-S-3Avc4WfsiagjZUnAr87j1dMgw-Hxgb_j4PWYg3DghaQXnHN__qLIOD4cSbgVPomb2XHbjFxMPw_c4jP6LxLgeEA3miKV4tqUx6zBUfxbB5elKaw3O2rlgJ7zN4t8B1brSK5w0tO0XXSCpFfvHsQ"/>
+</div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-surface-container-highest text-secondary font-label-md">+40</div>
+</div>
+<button class="bg-primary text-on-primary px-md py-sm font-label-md flex items-center gap-xs">
+                            Register Now
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Secondary Small Cards -->
+<div class="md:col-span-4 grid grid-rows-2 gap-gutter">
+<div class="bg-surface-container-lowest border border-[#EBEBE5] p-md flex flex-col justify-between">
+<div>
+<div class="text-primary font-code text-code mb-xs">Workshop</div>
+<h3 class="font-headline-md text-headline-md leading-tight">Cyber Security Awareness 2.0</h3>
+</div>
+<div class="font-label-md text-secondary mt-md">April 22 • Lab 404</div>
+</div>
+<div class="bg-surface-container-lowest border border-[#EBEBE5] p-md flex flex-col justify-between">
+<div>
+<div class="text-primary font-code text-code mb-xs">Seminar</div>
+<h3 class="font-headline-md text-headline-md leading-tight">Blockchain in Supply Chain</h3>
+</div>
+<div class="font-label-md text-secondary mt-md">April 29 • Seminar Hall</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Chronological Timeline -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-xl">
+<h3 class="font-headline-lg text-headline-lg mb-xl flex items-center gap-sm">
+<span class="w-2 h-10 bg-primary block"></span>
+                Event Timeline
+            </h3>
+<div class="relative border-l-2 border-surface-variant ml-4 md:ml-0">
+<!-- Timeline Item 1 -->
+<div class="mb-lg pl-lg relative">
+<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
+<div class="flex flex-col md:flex-row md:items-center gap-md">
+<div class="min-w-[120px]">
+<span class="font-code text-primary font-bold">MAY 05</span>
+</div>
+<div class="bg-white border border-[#EBEBE5] p-md flex-grow">
+<div class="flex justify-between items-center mb-xs">
+<h4 class="font-headline-md text-headline-md">Inter-Departmental Coding Duel</h4>
+<span class="bg-surface-container px-xs py-1 rounded text-secondary font-label-md text-[12px]">COMPETITION</span>
+</div>
+<p class="font-body-md text-secondary">A high-stakes algorithmic battle between CS and IT departments. 4 hours, 8 challenges, 1 champion.</p>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="mb-lg pl-lg relative">
+<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
+<div class="flex flex-col md:flex-row md:items-center gap-md">
+<div class="min-w-[120px]">
+<span class="font-code text-primary font-bold">MAY 12</span>
+</div>
+<div class="bg-white border border-[#EBEBE5] p-md flex-grow">
+<div class="flex justify-between items-center mb-xs">
+<h4 class="font-headline-md text-headline-md">Sustainable Energy Systems Seminar</h4>
+<span class="bg-surface-container px-xs py-1 rounded text-secondary font-label-md text-[12px]">SEMINAR</span>
+</div>
+<p class="font-body-md text-secondary">Guest lecture by Dr. Alan Reed on the future of thorium-based nuclear reactors and smart grids.</p>
+</div>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="mb-lg pl-lg relative">
+<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
+<div class="flex flex-col md:flex-row md:items-center gap-md">
+<div class="min-w-[120px]">
+<span class="font-code text-primary font-bold">JUN 02</span>
+</div>
+<div class="bg-white border border-[#EBEBE5] p-md flex-grow">
+<div class="flex justify-between items-center mb-xs">
+<h4 class="font-headline-md text-headline-md">VLSI Design Bootcamp</h4>
+<span class="bg-surface-container px-xs py-1 rounded text-secondary font-label-md text-[12px]">WORKSHOP</span>
+</div>
+<p class="font-body-md text-secondary">Hands-on session with industry-standard Cadence tools for physical design and verification.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Event Grid -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop">
+<h3 class="font-headline-lg text-headline-lg mb-xl">All Program Modules</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Event 1 -->
+<div class="bg-white border border-[#EBEBE5] flex flex-col h-full overflow-hidden">
+<div class="h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A high-density circuit board with glowing neon pathways in a dark, clinical engineering laboratory. The lighting focuses on the intricate geometric patterns of the microchips. The aesthetic is futuristic and precise, using deep reds and stark whites to emphasize technical complexity and laboratory quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Cs1j5E21KLte_vD40Io_GQYH27m2G3emwXoIe3C-3BYcpPnXYqTOOOqF4elcStSE5VJ5LlwaU6AoO8jAr5uPkogdJsOpRqneGp65wpw7EG7y1JrliI4jFgYAz9UoSfzAI3gPtSomLLNhggr6YnUtUFYkrWCvcGcZBM7kuYCF2ad2_Khr-iW7V3Uttp99fd11SHvmukRIntdHwwdNTitQuIeSBN9RWIX6GIrWPJuJZgrwZI22GY_1LJRjaYBWgWgjFAJstG1FpN8"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-sm">
+<span class="text-primary font-label-md">Hardware</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">memory</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-xs">Embedded Systems Mastery</h4>
+<p class="font-body-md text-secondary mb-lg flex-grow">Mastering STM32 and RTOS for high-performance industrial automation applications.</p>
+<div class="flex items-center justify-between mt-auto pt-md border-t border-surface-variant">
+<span class="font-code text-label-md text-on-surface">FREE</span>
+<button class="text-primary font-label-md flex items-center gap-xs hover:gap-md transition-all">
+                                VIEW DETAILS
+                                <span class="material-symbols-outlined text-[16px]">trending_flat</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="bg-white border border-[#EBEBE5] flex flex-col h-full overflow-hidden">
+<div class="h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A digital visualization of a neural network with glowing nodes and data streams. The lighting is low-key with high-contrast sharp lines in white and vibrant red. The mood is highly technical and analytical, suggesting an advanced AI research facility. Minimalist architectural depth is created through soft, tonal layering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8QyhpaoLNro6Uv6GTM1SP8IpWWWmAN_B09han81c4BJoSlcuJyajALIHtp_Izj-AzzLYsP59NEjFF46H_fPsOaxlP9Ru-y1gg3NSqAVPZJKB7tl8JTlzPHh995BYFYC27Giu6WSxeyvjqAvzcNibJyqFIWPlnMYlXrA5tV2Kw6xjo3r7GYFzgvsNFKpRsoUBSIn4VXygosdCk7jLLsGRWG50DExLs8FsNWizRYRNVu_IvP89SF5nvvYlKhOY7hE_KpJ-8d2iyC_4"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-sm">
+<span class="text-primary font-label-md">AI &amp; ML</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-xs">Neural Network Optimization</h4>
+<p class="font-body-md text-secondary mb-lg flex-grow">Techniques for deploying lightweight LLMs on edge devices without performance loss.</p>
+<div class="flex items-center justify-between mt-auto pt-md border-t border-surface-variant">
+<span class="font-code text-label-md text-on-surface">$15.00</span>
+<button class="text-primary font-label-md flex items-center gap-xs hover:gap-md transition-all">
+                                VIEW DETAILS
+                                <span class="material-symbols-outlined text-[16px]">trending_flat</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="bg-white border border-[#EBEBE5] flex flex-col h-full overflow-hidden">
+<div class="h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A modern data center interior with endless rows of server racks illuminated by subtle red LED strips. The atmosphere is sterile, futuristic, and orderly, representing the backbone of modern engineering infrastructure. High-key white lighting fills the central aisle, creating a sense of vast, organized space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUkDPfKERp1o8Rg5ir03UWDhGc8z_Vh3pEE2CpbOjkv4lgl1Qwj19xfVCdbbsmG3u4zD4At7DwN72bkH0XVrj5MpEHkN5AN0yIYJD_88yu5bWaezUbKggioBaxHovfhUEA0dBphF8C6QhFDsYROgYJ5hI79fpzN8Wbc9my7Fmix1AGCFN2H1rRFxDzBj8XCjwfKsQULhmPp-E6xnme-soNpTyOh8J0rQWwW7z5JtLLuWg0iCJZdU-kGX1C6kwfpSQvFwJQ-svDTc"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="flex justify-between items-center mb-sm">
+<span class="text-primary font-label-md">Web Tech</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">lan</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-xs">Full-Stack Scalability</h4>
+<p class="font-body-md text-secondary mb-lg flex-grow">Designing microservices architecture for systems serving millions of concurrent users.</p>
+<div class="flex items-center justify-between mt-auto pt-md border-t border-surface-variant">
+<span class="font-code text-label-md text-on-surface">FREE</span>
+<button class="text-primary font-label-md flex items-center gap-xs hover:gap-md transition-all">
+                                VIEW DETAILS
+                                <span class="material-symbols-outlined text-[16px]">trending_flat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-highest border-t border-surface-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-xl max-w-[1200px] mx-auto">
+<div class="mb-md md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-xs">Club Abhiyanta-BIT</div>
+<p class="font-body-md text-body-md text-on-surface">© 2024 Club Abhiyanta-BIT. Precision in Engineering.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Laboratory Access</a>
+</div>
+</div>
+</footer>
+</body></html>

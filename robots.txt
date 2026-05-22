@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /assets/images/members/
+Disallow: /desings/
+Disallow: /folder.php
+Disallow: /info for club/
+Disallow: /New folder/
+
+Sitemap: https://clubabhiyanta.org/sitemap.xml

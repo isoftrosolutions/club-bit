@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#464747",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e3e3dd",
+                    "surface-tint": "#bc111e",
+                    "surface-container-high": "#e8e8e2",
+                    "surface-container": "#eeeee8",
+                    "on-surface": "#1a1c19",
+                    "surface-bright": "#fafaf3",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "primary-container": "#c81d25",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-primary-fixed": "#410003",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#ffb3ad",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#ffdad6",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#e5bdba",
+                    "on-secondary-container": "#636262",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1a1c19",
+                    "outline": "#906f6c",
+                    "surface-dim": "#dadad4",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface": "#fafaf3",
+                    "primary": "#a10014",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#5c403d",
+                    "inverse-surface": "#2f312d",
+                    "inverse-on-surface": "#f1f1eb",
+                    "on-tertiary-container": "#e6e4e4",
+                    "on-primary-fixed-variant": "#930011",
+                    "surface-container-low": "#f4f4ee",
+                    "on-primary-container": "#ffddda",
+                    "background": "#fafaf3",
+                    "surface-container-highest": "#e3e3dd",
+                    "secondary": "#5f5e5e",
+                    "tertiary": "#4e4e4e",
+                    "tertiary-fixed": "#e4e2e2",
+                    "secondary-container": "#e2dfde",
+                    "tertiary-container": "#666666",
+                    "secondary-fixed-dim": "#c8c6c5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "lg": "48px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "sm": "16px",
+                    "xl": "80px",
+                    "margin-desktop": "64px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "display": ["Montserrat"],
+                    "label-md": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "code": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "code": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .team-card-hover:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background border-b border-surface-variant h-20">
+<div class="flex justify-between items-center px-margin-desktop h-full max-w-[1200px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">Club Abhiyanta-BIT</div>
+<div class="hidden md:flex items-center space-x-lg">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Team</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Events</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Projects</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#">Roadmap</a>
+<button class="bg-primary text-on-primary px-md py-xs rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all">Contact</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto text-center">
+<h1 class="font-display text-display text-on-surface mb-sm">The Minds Behind the Machine</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">
+                A collective of engineers, designers, and visionaries pushing the boundaries of technical excellence at BIT. Meet the individuals driving our R&amp;D initiatives.
+            </p>
+</section>
+<!-- Current Executive Board 2025/2026 -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<div class="flex items-center gap-sm mb-lg">
+<div class="h-px bg-surface-variant flex-grow"></div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface whitespace-nowrap">Current Executive Board 2025/2026</h2>
+<div class="h-px bg-surface-variant flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- President -->
+<div class="bg-white border border-[#EBEBE5] rounded-lg p-md team-card-hover transition-transform duration-300">
+<div class="aspect-square bg-surface-container-low rounded-lg mb-md overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a male engineering lead in a minimalist, high-key studio setting. The lighting is crisp and cool, reflecting a modern R&amp;D atmosphere. He wears a dark charcoal shirt, contrasting with the creamy white background. The composition is structured and architectural, maintaining the technical brand identity of Club Abhiyanta-BIT." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB60sZj1J2Dgtjv33fVdFMKtoLbatvm90AKXaH3I7J7NqDkoMwk0JPey6MIuDLxc9Um651d-EB1YGAFh0wPn8wu0bbjdRjnpLqZwkp7Ys7aX3BQ568Zhxd3KqWQMfy992Y5lPkXNK4W10Ruodyv_f6GEVFK4aA84BxZPk5Qzc38u3UV0YTNqkXlG6ug8AIYYYellRBurBiuLV5AVbotWpSkDp6bMS7cEQ2cUP2fv3pjfFw96bAhNeTS6VVCa_NiqkXH3I9GdUXadyY"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Arjun Sharma</h3>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider">President</p>
+</div>
+<div class="flex gap-xs">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary">link</span>
+</div>
+</div>
+</div>
+<!-- Vice President -->
+<div class="bg-white border border-[#EBEBE5] rounded-lg p-md team-card-hover transition-transform duration-300">
+<div class="aspect-square bg-surface-container-low rounded-lg mb-md overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a female tech executive against a sterile, bright laboratory background. The lighting is soft and diffused, creating a high-end startup aesthetic. Her expression is confident and precise. The image uses a clean, white-on-white layering technique, consistent with the Engineering Red branding accents found throughout the UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWd9mOxlNMTIozJMdmhEd6b2j4zw1bRswcNkF4vCNwinvqzeJRfUm-wGOA1vMEA2bOjDSkW6sLRmnwmZG6JU2M5jehR-GP_5X-FUPENJgUGHOZUvlztV5_UiDoYo-eivBK7NshYNGCuU0eutPCO6sUccct0pyfwhdHDovjqQCSfDzLDHSeu9uOpjkALq-UBH9o2juWT89zZ3oEzRj2S9BmJr5-WxopzAv1spCkmzfdHORcivBjjb0KdtiGwhW2_071oLQxFFCwqaY"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Priya Verma</h3>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider">Vice President</p>
+</div>
+<div class="flex gap-xs">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary">link</span>
+</div>
+</div>
+</div>
+<!-- Technical Lead -->
+<div class="bg-white border border-[#EBEBE5] rounded-lg p-md team-card-hover transition-transform duration-300">
+<div class="aspect-square bg-surface-container-low rounded-lg mb-md overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="A male technical lead headshot with a focus on precision and engineering excellence. The setting is a modern, light-filled workspace with subtle architectural depth. The color palette is composed of neutrals and whites, allowing the subject to stand out. The image is crisp, professional, and reflects a relentless focus on the future." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkqYmTDXJsAXDlEIM4sU-2SvBA0csYUAZ2-SQbKx9wIqOhOBj8EG1wznifHSYrLCJ2Gjix1Y-FgLLryKZnSMFMhGeaXGIioI44F-bOxNCXxMAVUfKAvx7r391OTaN-tJ9Wkukakv2uCaE34nC778u-LT2kY9Pxxtcy_3ov2fFnHIdeClwAgG-43LVnymleFlPzN2xI-v09MsPtiLZ0eJtw3kWh-yh0BX8mIejpo2tO8ZNc1Izw0CbOgEfFuqyV_R6rmHE2w7HXvw8"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Rohan Das</h3>
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider">Technical Lead</p>
+</div>
+<div class="flex gap-xs">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary">link</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Members -->
+<section class="py-xl bg-surface-container-low">
+<div class="px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Core Members</h2>
+<p class="font-body-md text-body-md text-secondary">The technical engine of the club.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Core 1 -->
+<div class="bg-white border border-[#EBEBE5] rounded-lg p-sm team-card-hover transition-transform duration-300 text-center">
+<div class="aspect-square bg-surface-variant rounded-full mb-sm overflow-hidden mx-auto w-32 grayscale hover:grayscale-0 transition-all">
+<img class="w-full h-full object-cover" data-alt="Close-up professional headshot of a male core member in a bright, technical environment. The background is a blurred laboratory with engineering equipment, maintaining a sterile but warm atmosphere. High-contrast lighting highlights the subject's features, emphasizing clarity and structural integrity in the portrait style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIy_dsgyu1bzZi5NzTMHdMjK6tGw5cOXwDhZYFirBkiXD8iyfO34WX74ybUSoxXuqkD7j6soxDR_TT503f0ZvygSKBnp6gj4LEKAYLIU6_Njr2NbwaW2Iw1xTmYOin8cVGkBtBjFdE4CNDMa5tjBjbVSOxbKQ-DeWKbJ_-M1Q_SMGOKFarhOEliMzhUAu0krxINgiYZL62qvPspFFfKrv5-39ves1y_towOPvFP_XfFsdJzGc3jqxUf1ndkycAiAKfxEVxgdxX_00"/>
+</div>
+<h4 class="font-label-md text-on-surface font-bold">Amit K.</h4>
+<p class="text-[12px] text-secondary uppercase tracking-tighter">Embedded Systems</p>
+</div>
+<!-- Core 2 -->
+<div class="bg-white border border-[#EBEBE5] rounded-lg p-sm team-card-hover transition-transform duration-300 text-center">
+<div class="aspect-square bg-surface-variant rounded-full mb-sm overflow-hidden mx-auto w-32 grayscale hover:grayscale-0 transition-all">
+<img class="w-full h-full object-cover" data-alt="A female engineering student headshot in a high-key, modern architectural space. The lighting simulates architectural depth with tonal layering. She is dressed professionally, and the mood is serene yet technologically advanced. The aesthetic is unapologetically technical, favoring structural integrity and clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjob1lR6zK2NSPLQSXFxIzL_FeFjtYXgooAXshIQoOWsMHBTAc4X4SuhAY9taxbBl9ZsdzrIcYA0wMrh_7o4sZEuUCB10ZUrqc08NcHJziX7SVd5llzsI6y5krzfxnJmfbsuy9RGzjeu1Y2FYnHfJE3B6u7V-NCYXVT7b0PNMoTZjwvmhq2CpdPyAb2yqrkke8xTJ_5q-aeG91qOke5cvn3khxGrzeZxoqjgWdgCfdhTqO7gH9prvXuA-OrAybVadP3kjk3fJ7G2Y"/>
+</div>
+<h4 class="font-label-md text-on-surface font-bold">Sanya M.</h4>
+<p class="text-[12px] text-secondary uppercase tracking-tighter">Full Stack Dev</p>
+</div>
+<!-- Core 3 -->
+<div class="bg-white border border-[#EBEBE5] rounded-lg p-sm team-card-hover transition-transform duration-300 text-center">
+<div class="aspect-square bg-surface-variant rounded-full mb-sm overflow-hidden mx-auto w-32 grayscale hover:grayscale-0 transition-all">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young male engineer in a minimalist gallery setting. The composition uses a white-on-white layering technique to create architectural depth. The lighting is bright and clean, reflecting the modern laboratory theme of the organization. High-contrast elements and professional styling define the image." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaUKT6J9WsDFf-Jd63BPGJPfVkm2Ia2YvHNML5bGRtC10SGUfWP4ok0x65EKTnV8lMcXSChi3uRE6ngOzGekOVmEHpw4RWgzClQQBVIQ1A251TMhG_JUxVe8oZLB_hJriKB0BbOeyGYNIA8vs4GOGdw-jTfP3EbLfC1fXcPVkptDcdOFNNFx-f-yky9MS4Mc00j-Qx3O6bXCk4Xf6kbpdSv07a4Bh96fSC35LJl0uT7SJyHbcy5pT3uojpBBopTcn0z0XmjbRnh80"/>
+</div>
+<h4 class="font-label-md text-on-surface font-bold">Vikram S.</h4>
+<p class="text-[12px] text-secondary uppercase tracking-tighter">AI/ML Research</p>
+</div>
+<!-- Core 4 -->
+<div class="bg-white border border-[#EBEBE5] rounded-lg p-sm team-card-hover transition-transform duration-300 text-center">
+<div class="aspect-square bg-surface-variant rounded-full mb-sm overflow-hidden mx-auto w-32 grayscale hover:grayscale-0 transition-all">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a female researcher in a bright, modern R&amp;D facility. The lighting is crisp and the setting is minimalist, emphasizing the 'Structured Light' concept. The subject is captured in a confident, technical pose, aligning with the brand's focus on future-ready engineering and precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV_PxlUChZPwZMDWAvx92pMNF85WQBfqklH-pWU7ZFn1sl5gAvHsx0UZyz3EBzfzPTpuRe5g09nv5fUcH5f7vsZQ-RT5GScMSq1Fw590jVYl3vdE7w45DC_ElgKqTspJkSItpnjpuT0Np2CJa79RWMrdvcMkfea6oSE5FX_plgIJOWRcB-8m611Oa51sAyLY59MdUFqczcOvX1b2v9_AHkDsA1GIvC2Xm2Pf4Aba_dTtfvE-TBImVEKKpmUuT3w4_VuK-sYB18Nw0"/>
+</div>
+<h4 class="font-label-md text-on-surface font-bold">Neha R.</h4>
+<p class="text-[12px] text-secondary uppercase tracking-tighter">UI/UX Designer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Past Executive Board -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<div class="flex items-center justify-between mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Past Executive Board</h2>
+<div class="flex gap-base">
+<div class="px-sm py-xs bg-surface-container text-on-surface font-label-md rounded-lg">2023-24</div>
+<div class="px-sm py-xs text-secondary font-label-md rounded-lg">2022-23</div>
+</div>
+</div>
+<div class="overflow-x-auto pb-md">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-surface-variant">
+<th class="py-sm font-label-md text-label-md text-secondary uppercase">Name</th>
+<th class="py-sm font-label-md text-label-md text-secondary uppercase">Role</th>
+<th class="py-sm font-label-md text-label-md text-secondary uppercase">Batch</th>
+<th class="py-sm font-label-md text-label-md text-secondary uppercase text-right">LinkedIn</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<tr class="border-b border-surface-container group hover:bg-surface-container-low transition-colors">
+<td class="py-md font-semibold">Ishaan Gupta</td>
+<td class="py-md">Ex-President</td>
+<td class="py-md">2024</td>
+<td class="py-md text-right"><span class="material-symbols-outlined text-primary">arrow_outward</span></td>
+</tr>
+<tr class="border-b border-surface-container group hover:bg-surface-container-low transition-colors">
+<td class="py-md font-semibold">Ananya Singh</td>
+<td class="py-md">Ex-Vice President</td>
+<td class="py-md">2024</td>
+<td class="py-md text-right"><span class="material-symbols-outlined text-primary">arrow_outward</span></td>
+</tr>
+<tr class="border-b border-surface-container group hover:bg-surface-container-low transition-colors">
+<td class="py-md font-semibold">Kabir Malhotra</td>
+<td class="py-md">Ex-Technical Lead</td>
+<td class="py-md">2024</td>
+<td class="py-md text-right"><span class="material-symbols-outlined text-primary">arrow_outward</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1200px] mx-auto bg-primary rounded-xl p-lg text-center relative overflow-hidden">
+<!-- Background decoration -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
+<path d="M0 100 L100 0" stroke="white" stroke-width="0.5"></path>
+<path d="M0 80 L80 0" stroke="white" stroke-width="0.5"></path>
+<path d="M20 100 L100 20" stroke="white" stroke-width="0.5"></path>
+</svg>
+</div>
+<h2 class="font-display text-display text-on-primary mb-md">Ready to Build the Future?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-lg max-w-xl mx-auto">
+                    We are always looking for passionate engineers and technical enthusiasts to join our core team and project squads.
+                </p>
+<div class="flex flex-col md:flex-row gap-md justify-center">
+<button class="bg-white text-primary px-xl py-md rounded-lg font-bold hover:bg-surface-container transition-all shadow-lg">Apply for Membership</button>
+<button class="border border-white text-white px-xl py-md rounded-lg font-bold hover:bg-white/10 transition-all">View Open Projects</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t border-surface-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-xl max-w-[1200px] mx-auto">
+<div class="mb-md md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-xs">Club Abhiyanta-BIT</div>
+<p class="font-body-md text-body-md text-on-surface">© 2024 Club Abhiyanta-BIT. Precision in Engineering.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Laboratory Access</a>
+</div>
+</div>
+</footer>
+</body></html>
