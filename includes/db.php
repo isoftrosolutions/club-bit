@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 }
 
 // Define Base URL (Adjust this to your server path)
-$base_url = "http://localhost/club/";
+$base_url = "https://app.ektamultipurposecoop.com.np/";
 
 // Helper function to get settings
 if (!function_exists('getSetting')) {
