@@ -201,9 +201,7 @@ $base_url = isset($base_url) ? $base_url : '/club/';
             <a href="<?php echo $base_url; ?>pages/membership.php" class="hidden md:inline bg-white border border-secondary/20 text-secondary px-md py-xs rounded font-label-md text-label-md hover:bg-surface-container-low transition-all active:scale-95">
                 Join
             </a>
-            <a href="<?php echo $base_url; ?>pages/login.php" class="hidden md:inline bg-white border border-secondary/20 text-secondary px-md py-xs rounded font-label-md text-label-md hover:bg-surface-container-low transition-all active:scale-95">
-                Login
-            </a>
+
             <button class="md:hidden flex items-center justify-center w-10 h-10 text-primary" onclick="document.querySelector('.mobile-nav').classList.toggle('hidden')" aria-label="Toggle menu">
                 <span class="material-symbols-outlined text-2xl">menu</span>
             </button>
@@ -236,7 +234,7 @@ $base_url = isset($base_url) ? $base_url : '/club/';
         </div>
         <div class="flex gap-sm pt-lg border-t border-outline-variant/20">
             <a href="<?php echo $base_url; ?>pages/membership.php" class="flex-1 bg-primary text-on-primary text-center px-md py-sm rounded-lg font-label-md text-label-md">Join</a>
-            <a href="<?php echo $base_url; ?>pages/login.php" class="flex-1 bg-white border border-secondary/20 text-secondary text-center px-md py-sm rounded-lg font-label-md text-label-md">Login</a>
+
         </div>
     </div>
 </div>

@@ -14,6 +14,9 @@
                 <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
                 <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
                 <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="<?php echo $base_url; ?>pages/contact.php">Laboratory Access</a>
+                <a href="<?php echo $base_url; ?>pages/login.php" class="bg-white border border-secondary/20 text-secondary px-md py-xs rounded font-label-md text-label-md hover:bg-surface-container-low transition-all active:scale-95">
+                    Login
+                </a>
             </div>
         </div>
     </footer>
