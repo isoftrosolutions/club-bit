@@ -7,9 +7,9 @@
 
 
 $servername = "localhost";
-$username   = "root";
-$password   = "";
-$dbname     = "club";
+$username   = "ektamultp_club";
+$password   = "IpD}Rzia7ch,@[M^";
+$dbname     = "ektamultp_club";
 
 // Create connection to the hosted database
 $conn = new mysqli($servername, $username, $password, $dbname);
