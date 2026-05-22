@@ -3,7 +3,7 @@ $pageTitle = "About Us";
 include '../includes/header.php'; 
 ?>
 
-<section class="relative h-[614px] flex items-center overflow-hidden">
+<section class="relative min-h-[360px] md:min-h-[614px] flex items-center overflow-hidden py-lg md:py-0">
     <div class="absolute inset-0 z-0">
         <img alt="Engineering Laboratory" class="w-full h-full object-cover opacity-20 grayscale" src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80">
     </div>
@@ -205,8 +205,8 @@ include '../includes/header.php';
         <h2 class="font-display text-display mb-md">Ready to Build the Future?</h2>
         <p class="font-body-lg text-body-lg mb-lg max-w-2xl mx-auto opacity-90">Our laboratory doors are always open to those with the curiosity to ask "Why?" and the courage to ask "How?"</p>
         <div class="flex flex-col sm:flex-row justify-center gap-sm">
-            <button class="bg-on-primary text-primary px-lg py-sm font-label-md text-label-md rounded-full shadow-lg hover:scale-105 transition-transform" onclick="window.location.href='membership.php'">Apply for Membership</button>
-            <button class="border-2 border-on-primary text-on-primary px-lg py-sm font-label-md text-label-md rounded-full hover:bg-on-primary hover:text-primary transition-all" onclick="window.location.href='contact.php'">Visit the Lab</button>
+            <button class="bg-on-primary text-primary px-lg py-sm font-label-md text-label-md rounded-full shadow-lg hover:scale-105 transition-transform w-full sm:w-auto" onclick="window.location.href='membership.php'">Apply for Membership</button>
+            <button class="border-2 border-on-primary text-on-primary px-lg py-sm font-label-md text-label-md rounded-full hover:bg-on-primary hover:text-primary transition-all w-full sm:w-auto" onclick="window.location.href='contact.php'">Visit the Lab</button>
         </div>
     </div>
 </section>

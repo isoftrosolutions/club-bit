@@ -329,7 +329,11 @@ nav {
         url('../images/background-image.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+}
+@media (min-width: 768px) {
+    .hero {
+        background-attachment: fixed;
+    }
 }
 
 .hero::before {
@@ -1114,6 +1118,30 @@ footer {
     .team-grid {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 4rem;
+    }
+}
+
+/* Very small screens (320px-480px) - tighten spacing */
+@media (max-width: 480px) {
+    .gap-gutter, .gap-md {
+        gap: 16px !important;
+    }
+    .gap-lg {
+        gap: 24px !important;
+    }
+    .gap-xl {
+        gap: 32px !important;
+    }
+    .p-lg {
+        padding: 24px !important;
+    }
+    .py-xl {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+    }
+    .px-margin-mobile {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
     }
 }
 

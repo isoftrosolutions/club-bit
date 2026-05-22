@@ -80,6 +80,21 @@ $adminPages = [
             padding: 0;
             box-sizing: border-box;
         }
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.3);
+            z-index: 99;
+        }
+        .sidebar-overlay.show {
+            display: block;
+        }
+        @media (min-width: 769px) {
+            .sidebar-overlay.show {
+                display: none;
+            }
+        }
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #fafaf3;
@@ -363,16 +378,34 @@ $adminPages = [
             background: #e4e2e2;
             color: #4e4e4e;
         }
+        .mobile-menu-btn {
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: #a10014;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 101;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .sidebar.show {
+            transform: translateX(0);
+        }
         @media (max-width: 768px) {
             .sidebar {
                 transform: translateX(-100%);
+                transition: transform 0.3s ease;
             }
             .main-content {
                 margin-left: 0;
                 padding: 24px 16px;
             }
             .mobile-menu-btn {
-                display: block;
+                display: flex;
             }
         }
         @media (min-width: 769px) and (max-width: 1024px) {
@@ -397,6 +430,8 @@ $adminPages = [
 </head>
 <body>
     <div class="admin-layout">
+        <!-- Sidebar Overlay (mobile) -->
+        <div class="sidebar-overlay" onclick="document.querySelector('.sidebar').classList.remove('show');this.classList.remove('show')"></div>
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
@@ -424,11 +459,16 @@ $adminPages = [
         <!-- Main Content -->
         <main class="main-content">
             <div class="top-bar">
-                <div>
-                    <h1 class="page-title"><?php echo isset($pageTitle) ? $pageTitle : 'Dashboard'; ?></h1>
-                    <?php if (isset($pageSubtitle)): ?>
-                        <p class="page-subtitle"><?php echo $pageSubtitle; ?></p>
-                    <?php endif; ?>
+                <div class="flex items-center gap-sm">
+                    <button class="mobile-menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('show');document.querySelector('.sidebar-overlay').classList.toggle('show')" aria-label="Toggle menu">
+                        ☰
+                    </button>
+                    <div>
+                        <h1 class="page-title"><?php echo isset($pageTitle) ? $pageTitle : 'Dashboard'; ?></h1>
+                        <?php if (isset($pageSubtitle)): ?>
+                            <p class="page-subtitle"><?php echo $pageSubtitle; ?></p>
+                        <?php endif; ?>
+                    </div>
                 </div>
                 <div class="user-info">
                     <div class="user-details">

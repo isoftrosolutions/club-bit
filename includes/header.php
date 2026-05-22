@@ -8,7 +8,7 @@ $base_url = isset($base_url) ? $base_url : '/club/';
 <html class="light" lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title><?php echo isset($pageTitle) ? $pageTitle . ' | ' : ''; ?><?php echo getSetting('club_name', 'Club Abhiyanta-BIT'); ?></title>
@@ -154,14 +154,14 @@ $base_url = isset($base_url) ? $base_url : '/club/';
                         "headline-lg": ["Montserrat"]
                     },
                     fontSize: {
-                        "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display": ["clamp(32px, 8vw, 48px)", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700"}],
                         "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-md": ["clamp(20px, 4vw, 24px)", {"lineHeight": "1.3", "fontWeight": "600"}],
                         "code": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
                         "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-lg": ["clamp(16px, 2.5vw, 18px)", {"lineHeight": "1.5", "fontWeight": "400"}],
                         "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
-                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+                        "headline-lg": ["clamp(24px, 5vw, 32px)", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "700"}]
                     }
                 }
             }
@@ -202,7 +202,7 @@ $base_url = isset($base_url) ? $base_url : '/club/';
                 Join
             </a>
 
-            <button class="md:hidden flex items-center justify-center w-10 h-10 text-primary" onclick="document.querySelector('.mobile-nav').classList.toggle('hidden')" aria-label="Toggle menu">
+            <button class="md:hidden flex items-center justify-center w-11 h-11 text-primary" onclick="document.querySelector('.mobile-nav').classList.toggle('hidden')" aria-label="Toggle menu">
                 <span class="material-symbols-outlined text-2xl">menu</span>
             </button>
         </div>

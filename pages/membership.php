@@ -13,7 +13,9 @@ include '../includes/header.php';
             </div>
 
             <div class="text-center">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVM9hLGnOPNdtEiVmUiJhhln4qEmG4sCrd540gFuhnOp_xeg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div class="relative w-full" style="padding-bottom: min(800px, 120vh);">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVM9hLGnOPNdtEiVmUiJhhln4qEmG4sCrd540gFuhnOp_xeg/viewform?embedded=true" class="absolute inset-0 w-full h-full" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
             </div>
         </div>
     </section>

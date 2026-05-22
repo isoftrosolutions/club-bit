@@ -125,19 +125,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="bg-surface-container-highest p-md">
             <h3 class="font-label-md text-label-md text-secondary mb-md tracking-wider">GLOBAL NETWORKS</h3>
             <div class="grid grid-cols-2 gap-xs">
-                <a class="flex items-center gap-xs p-xs bg-surface-container-lowest border border-surface-variant hover:border-primary transition-colors" href="#">
+                <a class="flex items-center gap-xs p-sm sm:p-xs bg-surface-container-lowest border border-surface-variant hover:border-primary transition-colors" href="#">
                     <span class="material-symbols-outlined text-[20px]">terminal</span>
                     <span class="font-label-md text-[12px]">GITHUB</span>
                 </a>
-                <a class="flex items-center gap-xs p-xs bg-surface-container-lowest border border-surface-variant hover:border-primary transition-colors" href="#">
+                <a class="flex items-center gap-xs p-sm sm:p-xs bg-surface-container-lowest border border-surface-variant hover:border-primary transition-colors" href="#">
                     <span class="material-symbols-outlined text-[20px]">hub</span>
                     <span class="font-label-md text-[12px]">LINKEDIN</span>
                 </a>
-                <a class="flex items-center gap-xs p-xs bg-surface-container-lowest border border-surface-variant hover:border-primary transition-colors" href="#">
+                <a class="flex items-center gap-xs p-sm sm:p-xs bg-surface-container-lowest border border-surface-variant hover:border-primary transition-colors" href="#">
                     <span class="material-symbols-outlined text-[20px]">photo_camera</span>
                     <span class="font-label-md text-[12px]">INSTAGRAM</span>
                 </a>
-                <a class="flex items-center gap-xs p-xs bg-surface-container-lowest border border-surface-variant hover:border-primary transition-colors" href="#">
+                <a class="flex items-center gap-xs p-sm sm:p-xs bg-surface-container-lowest border border-surface-variant hover:border-primary transition-colors" href="#">
                     <span class="material-symbols-outlined text-[20px]">podcasts</span>
                     <span class="font-label-md text-[12px]">DISCORD</span>
                 </a>

@@ -3,7 +3,7 @@ $pageTitle = "R&D Projects";
 include '../includes/header.php'; 
 ?>
 
-<section class="relative h-[614px] flex items-center overflow-hidden">
+<section class="relative min-h-[360px] md:min-h-[614px] flex items-center overflow-hidden py-lg md:py-0">
     <div class="absolute inset-0 z-0">
         <img alt="Research Laboratory" class="w-full h-full object-cover opacity-20 grayscale" src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80">
     </div>

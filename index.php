@@ -17,7 +17,7 @@ $ctas = getCTASections();
 </style>
 
 <!-- Hero Section -->
-<section class="relative min-h-[600px] flex items-center overflow-hidden structural-line">
+<section class="relative min-h-[480px] md:min-h-[600px] flex items-center overflow-hidden structural-line">
     <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-xl items-center py-xl">
         <div class="z-10">
             <div class="inline-block px-3 py-1 bg-primary/10 text-primary font-label-md rounded-full mb-6">
@@ -30,11 +30,11 @@ $ctas = getCTASections();
             <p class="text-body-lg text-secondary mb-10 max-w-lg">
                 <?php echo getSetting('hero_description', 'A premium engineering research and innovation hub dedicated to precision engineering, IoT, and Robotics.'); ?>
             </p>
-            <div class="flex flex-wrap gap-md">
-                <button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-lg hover:shadow-lg transition-all" onclick="window.location.href='<?php echo getSetting('cta_button_link', 'pages/membership.php'); ?>'">
+            <div class="flex flex-col sm:flex-row gap-md">
+                <button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-lg hover:shadow-lg transition-all w-full sm:w-auto" onclick="window.location.href='<?php echo getSetting('cta_button_link', 'pages/membership.php'); ?>'">
                     <?php echo getSetting('cta_button_text', 'Join Club'); ?>
                 </button>
-                <button class="bg-white border border-secondary/20 text-secondary px-8 py-4 rounded-lg font-label-md text-lg hover:bg-surface-container-low transition-all" onclick="window.location.href='<?php echo getSetting('secondary_cta_link', 'pages/about.php'); ?>'">
+                <button class="bg-white border border-secondary/20 text-secondary px-8 py-4 rounded-lg font-label-md text-lg hover:bg-surface-container-low transition-all w-full sm:w-auto" onclick="window.location.href='<?php echo getSetting('secondary_cta_link', 'pages/about.php'); ?>'">
                     <?php echo getSetting('secondary_cta_text', 'Explore Activities'); ?>
                 </button>
             </div>
@@ -270,7 +270,7 @@ $projects = $conn->query("SELECT * FROM projects WHERE is_visible = 1 AND is_fea
             </a>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-md">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-md">
             <?php while($g = $gallery->fetch_assoc()): ?>
             <div class="group cursor-pointer relative aspect-video rounded-xl overflow-hidden">
                 <img src="<?php echo $g['image_path']; ?>" alt="<?php echo $g['title']; ?>" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">

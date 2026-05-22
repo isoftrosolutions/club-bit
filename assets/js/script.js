@@ -194,8 +194,9 @@ document.addEventListener('DOMContentLoaded', () => {
         width: 0%;
         height: 3px;
         background: var(--gradient-primary);
-        z-index: 9999;
+        z-index: 999;
         transition: width 0.25s ease;
+        pointer-events: none;
     `;
     document.body.appendChild(scrollProgress);
 
@@ -225,15 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 10. Loading Animation
+    // 10. Loading Complete
     window.addEventListener('load', () => {
         document.body.classList.add('loaded');
-
-        // Add fade-in animation to body
-        document.body.style.opacity = '0';
-        document.body.style.transition = 'opacity 0.5s ease';
-        setTimeout(() => {
-            document.body.style.opacity = '1';
-        }, 100);
     });
 });

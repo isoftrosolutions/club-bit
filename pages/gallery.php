@@ -39,11 +39,11 @@ $gallery = $conn->query("SELECT * FROM gallery ORDER BY created_at DESC");
 
 <section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-lg">
     <div class="flex flex-wrap gap-xs">
-        <button class="bg-primary text-on-primary px-md py-xs rounded font-label-md text-label-md">All Entries</button>
-        <button class="bg-surface-container border border-surface-variant text-secondary px-md py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Workshops</button>
-        <button class="bg-surface-container border border-surface-variant text-secondary px-md py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Team Meetings</button>
-        <button class="bg-surface-container border border-surface-variant text-secondary px-md py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Award Ceremony</button>
-        <button class="bg-surface-container border border-surface-variant text-secondary px-md py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Tech-Fest</button>
+        <button class="bg-primary text-on-primary px-md py-sm sm:py-xs rounded font-label-md text-label-md">All Entries</button>
+        <button class="bg-surface-container border border-surface-variant text-secondary px-md py-sm sm:py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Workshops</button>
+        <button class="bg-surface-container border border-surface-variant text-secondary px-md py-sm sm:py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Team Meetings</button>
+        <button class="bg-surface-container border border-surface-variant text-secondary px-md py-sm sm:py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Award Ceremony</button>
+        <button class="bg-surface-container border border-surface-variant text-secondary px-md py-sm sm:py-xs rounded font-label-md text-label-md hover:border-primary transition-colors">Tech-Fest</button>
     </div>
 </section>
 
